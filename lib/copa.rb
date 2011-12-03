@@ -1,0 +1,3 @@
+module Copa
+  # Your code goes here...
+end
