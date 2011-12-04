@@ -10,5 +10,11 @@ module Copa
     def url
       "#{URL_BASE}/acoes/#{@id}"
     end
+
+    def type
+      parser = ::Nokogiri::HTML RestClient.get(url)
+      parser.search("#parent-fieldname-tipo").text.gsub /^\s*|\s*$/, ''
+    end
+
   end
 end
