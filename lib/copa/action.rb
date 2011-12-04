@@ -5,6 +5,7 @@ module Copa
   class Action
     def initialize(id)
       @id = id
+      @data = ::Nokogiri::HTML RestClient.get(url)
     end
 
     def url
@@ -12,14 +13,12 @@ module Copa
     end
 
     def type
-      parser = ::Nokogiri::HTML RestClient.get(url)
-      parser.search("#parent-fieldname-tipo").text.gsub /^\s*|\s*$/, ''
+      @data.search("#parent-fieldname-tipo").text.gsub /^\s*|\s*$/, ''
     end
 
     def justification
       parser = ::Nokogiri::HTML RestClient.get(url)
-      parser.search("#parent-fieldname-justificativa").text.gsub /^\s*|\s*$/, ''
-
+      @data.search("#parent-fieldname-justificativa").text.gsub /^\s*|\s*$/, ''
     end
   end
 end
