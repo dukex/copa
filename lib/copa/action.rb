@@ -1,3 +1,6 @@
+require 'rubygems'
+require 'nokogiri'
+
 module Copa
   class Action
     def initialize(id)
