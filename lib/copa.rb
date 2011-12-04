@@ -1,3 +1,5 @@
+require 'copa/action'
+
 module Copa
-  # Your code goes here...
+  URL_BASE = "http://www.copatransparente.gov.br/portalCopa"
 end
