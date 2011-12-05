@@ -7,7 +7,7 @@ class ActionTest < Test::Unit::TestCase
     @action = Copa::Action.new("ola-mundo")
   end
 
-  def test_action_url
+  def test_url
     assert_equal "http://www.copatransparente.gov.br/portalCopa/acoes/ola-mundo", @action.url
   end
 
