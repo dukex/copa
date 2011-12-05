@@ -10,7 +10,7 @@ module Copa
     end
 
     def type
-     field("#parent-fieldname-tipo")
+      field("#parent-fieldname-tipo")
     end
 
     def justification
@@ -19,6 +19,10 @@ module Copa
 
     def price
       field("#parent-fieldname-custo_estimado_por_lote")
+    end
+
+    def state
+      field "#parent-fieldname-uf"
     end
 
     private

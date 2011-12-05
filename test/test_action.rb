@@ -22,5 +22,9 @@ class ActionTest < Test::Unit::TestCase
   def test_price
     assert_equal "R$ 591.711.185,00", @action.price
   end
+
+  def test_state
+    assert_equal "BA", @action.state
+  end
 end
 
