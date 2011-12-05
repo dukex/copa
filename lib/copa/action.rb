@@ -20,5 +20,9 @@ module Copa
       parser = ::Nokogiri::HTML RestClient.get(url)
       @data.search("#parent-fieldname-justificativa").text.gsub /^\s*|\s*$/, ''
     end
+
+    def price
+      @data.search("#parent-fieldname-custo_estimado_por_lote").text.gsub /^\s*|\s*$/, ''
+    end
   end
 end

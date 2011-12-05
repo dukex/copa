@@ -18,5 +18,9 @@ class ActionTest < Test::Unit::TestCase
   def test_justification
     assert_equal "Construção de Arena multiuso, voltada à realização dos jogos da Copa das Confederações de 2013 e da Copa do Mundo de 2014, em atendimento aos requisitos técnicos do Caderno de Encargos da FIFA.", @action.justification
   end
+
+  def test_price
+    assert_equal "R$ 591.711.185,00", @action.price
+  end
 end
 
