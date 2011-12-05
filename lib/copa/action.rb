@@ -2,7 +2,7 @@ module Copa
   class Action
     def initialize(id)
       @id = id
-      @data = ::Nokogiri::HTML RestClient.get(url)
+      @data = ::Nokogiri::HTML ::RestClient.get(url) # TODO: test it
     end
 
     def url

@@ -1,4 +1,5 @@
 require 'copa/nokogiri'
+require 'rest_client'
 require 'copa/action'
 
 
