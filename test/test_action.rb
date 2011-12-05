@@ -26,5 +26,10 @@ class ActionTest < Test::Unit::TestCase
   def test_state
     assert_equal "BA", @action.state
   end
+
+  def test_city
+    assert_equal "BA", @action.city
+  end
+
 end
 

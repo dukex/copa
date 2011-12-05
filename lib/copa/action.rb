@@ -25,6 +25,10 @@ module Copa
       field "#parent-fieldname-uf"
     end
 
+    def city
+#      field "#parent-fieldname-municipio"
+    end
+
     private
 
     def field(selector)
