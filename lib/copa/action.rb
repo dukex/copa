@@ -1,6 +1,3 @@
-require 'rubygems'
-require 'nokogiri'
-
 module Copa
   class Action
     def initialize(id)
@@ -13,16 +10,21 @@ module Copa
     end
 
     def type
-      @data.search("#parent-fieldname-tipo").text.gsub /^\s*|\s*$/, ''
+     field("#parent-fieldname-tipo")
     end
 
     def justification
-      parser = ::Nokogiri::HTML RestClient.get(url)
-      @data.search("#parent-fieldname-justificativa").text.gsub /^\s*|\s*$/, ''
+      field("#parent-fieldname-justificativa")
     end
 
     def price
-      @data.search("#parent-fieldname-custo_estimado_por_lote").text.gsub /^\s*|\s*$/, ''
+      field("#parent-fieldname-custo_estimado_por_lote")
+    end
+
+    private
+
+    def field(selector)
+      @data.search(selector).to_clean_text
     end
   end
 end
