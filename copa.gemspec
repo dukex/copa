@@ -6,11 +6,11 @@ Gem::Specification.new do |s|
   s.name        = "copa"
   s.version     = Copa::VERSION
   s.platform    = Gem::Platform::RUBY
-  s.authors     = ["TODO: Write your name"]
-  s.email       = ["TODO: Write your email address"]
-  s.homepage    = ""
-  s.summary     = %q{TODO: Write a gem summary}
-  s.description = %q{TODO: Write a gem description}
+  s.authors     = ["Duke"]
+  s.email       = ["duke@uberduke.com"]
+  s.homepage    = "https://github.com/emersonvinicius/copa"
+  s.summary     = %q{API to copatransparente.org.br}
+  s.description = %q{API in Ruby to acess data of copatransparente.org.br}
 
   s.rubyforge_project = "copa"
 
