@@ -4,7 +4,7 @@ require 'copa'
 
 class ActionTest < Test::Unit::TestCase
   def setup
-    @action = Copa::Action.new("ola-mundo")
+    @action = Copa::Action.new("ola-mundo", URIMock)
   end
 
   def test_url

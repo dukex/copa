@@ -1,8 +1,8 @@
 module Copa
   class Action
-    def initialize(id)
+    def initialize(id, request_client = ::RestClient)
       @id = id
-      @data = ::Nokogiri::HTML ::RestClient.get(url) # TODO: test it
+      @data = ::Nokogiri::HTML request_client.get(url) # TODO: test it
     end
 
     def url
