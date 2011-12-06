@@ -29,6 +29,10 @@ module Copa
       field "#parent-fieldname-municipio"
     end
 
+    def manager
+       field("#archetypes-fieldname-gestor").split(":").last.remove_new_line
+    end
+
     private
 
     def field(selector)

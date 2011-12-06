@@ -31,5 +31,7 @@ class ActionTest < Test::Unit::TestCase
     assert_equal "Salvador", @action.city
   end
 
+  def test_manager
+    assert_equal "André Luiz Barros Cerejo", @action.manager
+  end
 end
-
