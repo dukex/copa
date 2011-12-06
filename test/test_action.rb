@@ -28,7 +28,7 @@ class ActionTest < Test::Unit::TestCase
   end
 
   def test_city
-    assert_equal "BA", @action.city
+    assert_equal "Salvador", @action.city
   end
 
 end

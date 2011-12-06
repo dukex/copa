@@ -26,7 +26,7 @@ module Copa
     end
 
     def city
-#      field "#parent-fieldname-municipio"
+      field "#parent-fieldname-municipio"
     end
 
     private
